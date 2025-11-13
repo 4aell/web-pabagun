@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"PABAGUN" Panduan Bacaan Gunnah - Nun & Mim Tasydid</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #0d1b4c;
+      background: linear-gradient(135deg, #0b3b8e, #e6f0ff);
+      background-attachment: fixed;
+    }
+
+    header {
+      background: rgba(13, 27, 76, 0.95);
+      color: #fff;
+      text-align: center;
+      padding: 1.5em 0;
+      font-size: 1.8em;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      backdrop-filter: blur(5px);
+    }
+
+    nav button {
+      background: #0d1b4c;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav button:hover {
+      background: #0077cc;
+      transform: scale(1.05);
+    }
+
+    section {
+      min-height: 90vh;
+      padding: 3em 2em;
+      text-align: center;
+      display: none;
+      position: relative;
+    }
+
+    .content h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #0d1b4c;
+    }
+
+    .content p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 0 auto 1.5em auto;
+      line-height: 1.7em;
+      color: #1a1a1a;
+    }
+
+    button {
+      background: #0d1b4c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0077cc;
+      transform: scale(1.05);
+    }
+
+    audio {
+      margin-top: 1em;
+      width: 80%;
+      max-width: 400px;
+      outline: none;
+    }
+
+    .img-decor {
+      width: 200px;
+      opacity: 0.8;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header { font-size: 1.3em; }
+      .content p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>📖 Panduan Bacaan Gunnah (Dengung)</header>
+
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('nun')">Huruf Nun</button>
+    <button onclick="showPage('mim')">Huruf Mim</button>
+    <button onclick="showPage('contoh')">Contoh Bacaan</button>
+  </nav>
+
+  <!-- HALAMAN HOME -->
+  <section id="home" class="content" style="display:block;">
+    <h2>Selamat Datang di PABAGUN </h2>
+    <p>PABAGUN merupakan Website yang dapat membantu kamu memahami penggunaan bacaan <strong>Gunnah (dengung)</strong> pada huruf <strong>Nun</strong> dan <strong>Mim</strong> bertasydid.
+      Pelajari dengan mudah dan dengarkan contoh bacaannya agar lebih fasih membaca Al-Qur’an sesuai tajwid.</p>
+    <img src="images/alquran.png" alt="Quran" class="img-decor">
+    <br>
+    <button onclick="showPage('nun')">Mulai Belajar</button>
+  </section>
+
+  <!-- HALAMAN NUN -->
+  <section id="nun" class="content">
+    <h2>Bacaan Gunnah pada Huruf Nun Tasydid</h2>
+    <p>Gunnah terjadi ketika huruf <strong>نّ (Nun Tasydid)</strong> dibaca dengan dengung selama dua harakat. 
+      Suara dengung keluar melalui rongga hidung dengan lembut dan stabil.</p>
+    <p><strong>Contoh:</strong> إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ (Innā A‘thaināka Al-Kautsar)</p>
+    <audio controls>
+      <source src="audio/108-al-kautsar.mp3" type="audio/mpeg">
+    </audio>
+    <br><br>
+    <button onclick="showPage('mim')">Lanjut ke Huruf Mim</button>
+  </section>
+
+  <!-- HALAMAN MIM -->
+  <section id="mim" class="content">
+    <h2>Bacaan Gunnah pada Huruf Mim Tasydid</h2>
+    <p>Gunnah juga terjadi pada huruf <strong>مّ (Mim Tasydid)</strong> dengan cara membaca dengung selama dua harakat.
+      Suara keluar melalui hidung dengan lembut tanpa terputus.</p>
+    <p><strong>Contoh:</strong> وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ (Wa ammā as-sā’ila falā tanhar) — QS. Ad-Dhuha [93]: 10</p>
+    <audio controls>
+      <source src="audio/093-adh-dhuhaa.mp3" type="audio/mpeg">
+    </audio>
+    <br><br>
+    <button onclick="showPage('contoh')">Lihat Contoh Bacaan</button>
+  </section>
+
+  <!-- HALAMAN CONTOH -->
+  <section id="contoh" class="content">
+    <h2>Latihan Bacaan Gunnah</h2>
+    <p>Dengarkan contoh bacaan gunnah dari huruf Nun dan Mim berikut ini:</p>
+
+    <h3>Bacaan Nun Tasydid (Surah Al-Kautsar)</h3>
+    <audio controls>
+      <source src="audio/108-al-kautsar.mp3" type="audio/mpeg">
+    </audio>
+
+    <h3>Bacaan Mim Tasydid (Surah Ad-Dhuha)</h3>
+    <audio controls>
+      <source src="audio/093-adh-dhuhaa.mp3" type="audio/mpeg">
+    </audio>
+
+    <br><br>
+    <button onclick="showPage('home')">Kembali ke Beranda</button>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+      document.getElementById(pageId).style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+</body>
+</html>
